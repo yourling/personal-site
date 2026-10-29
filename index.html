@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOUR NAME · Personal Site</title>
+    <meta name="description" content="一镜到底 · Product & Engineering" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="webgl"></canvas>
+
+      <div id="scroll-track" aria-hidden="true"></div>
+
+      <div id="ui">
+        <header class="topbar">
+          <span class="logo">YL</span>
+          <nav class="nav">
+            <button type="button" data-goto="0.00">Hero</button>
+            <button type="button" data-goto="0.22">About</button>
+            <button type="button" data-goto="0.44">Projects</button>
+            <button type="button" data-goto="0.66">Skills</button>
+            <button type="button" data-goto="0.88">Contact</button>
+          </nav>
+          <button type="button" id="autoplay-btn" class="autoplay" aria-pressed="false">
+            <span class="autoplay-icon" aria-hidden="true">▶</span>
+            <span class="autoplay-label">自动播放</span>
+          </button>
+        </header>
+
+        <section class="panel" data-section="hero">
+          <p class="eyebrow">One continuous shot · 一镜到底</p>
+          <h1>YOUR NAME</h1>
+          <p class="tagline">一句话定位 · Product &amp; Engineering</p>
+          <p class="hint">滚动探索 · 或开启自动播放</p>
+        </section>
+
+        <section class="panel" data-section="about">
+          <p class="eyebrow">01 — About</p>
+          <h2>关于</h2>
+          <p class="body">
+            这里是一段占位介绍。我关注产品体验与工程落地，喜欢把复杂系统做成清晰、可感知的界面。
+            这段文字会随镜头缓缓浮现——替换成你的真实故事即可。
+          </p>
+        </section>
+
+        <section class="panel" data-section="projects">
+          <p class="eyebrow">02 — Projects</p>
+          <h2>作品</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Project A</h3>
+              <p>占位项目 · 简短描述产品与角色</p>
+            </article>
+            <article class="card">
+              <h3>Project B</h3>
+              <p>占位项目 · 技术栈与成果一句话</p>
+            </article>
+            <article class="card">
+              <h3>Project C</h3>
+              <p>占位项目 · 开源 / 实验 / 副业</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" data-section="skills">
+          <p class="eyebrow">03 — Skills</p>
+          <h2>技能</h2>
+          <div class="chips">
+            <span>TypeScript</span>
+            <span>Three.js</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Product Design</span>
+            <span>System Design</span>
+          </div>
+        </section>
+
+        <section class="panel" data-section="contact">
+          <p class="eyebrow">04 — Contact</p>
+          <h2>联系</h2>
+          <p class="body">欢迎交流产品、工程与协作机会。</p>
+          <div class="links">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="https://github.com/yourling" target="_blank" rel="noopener noreferrer"
+              >GitHub · yourling</a
+            >
+          </div>
+        </section>
+
+        <div class="progress" aria-hidden="true">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
