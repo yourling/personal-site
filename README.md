@@ -2,7 +2,9 @@
 
 极简深空风个人主页 · Vite + Three.js · **一镜到底**连续镜头。
 
-预览：https://yourling.github.io/personal-site/
+**预览：** https://yourling.github.io/personal-site/
+
+> 若链接尚未生效：打开仓库 **Settings → Pages**，Source 选 **GitHub Actions**（推荐），或 **Deploy from a branch** → `main` / `/docs`。启用一次后，后续 push 会自动更新。
 
 ## 本地开发
 
@@ -28,5 +30,4 @@ npm run preview
 
 ## 部署
 
-推送到 `main` 后，GitHub Actions 会构建并以 `gh-pages` 分支发布到 GitHub Pages。
-`vite.config.js` 中 `base: '/personal-site/'` 对应该仓库的 Project Pages 路径。
+`vite.config.js` 中 `base: '/personal-site/'`。推送到 `main` 后 Actions 会构建；`docs/` 为静态产物备份，便于分支 Pages。
